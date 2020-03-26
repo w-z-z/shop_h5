@@ -1,0 +1,209 @@
+ //重置header样式
+ .m-header {
+   .van-nav-bar {
+     height: @headerHeight;
+     line-height: @headerHeight;
+   }
+
+   .van-nav-bar {
+     .van-icon {
+       font-size: 35px;
+       color: #666666;
+     }
+   }
+
+   .van-nav-bar__title {
+     font-size: 36px;
+     color: @fontColorDark;
+   }
+ }
+
+ //重置产品card
+ .van-swipe {
+   height: 100%;
+
+   img {
+     height: 100%;
+     width: 100%;
+   }
+ }
+
+ //提交按钮自定义样式
+ #app {
+   .van-submit-bar__bar {
+     height: 140px;
+     padding: 0 20px;
+     position: relative;
+     font-size: @fontSizeArticl ;
+
+     .van-submit-bar__button--danger {
+       background: linear-gradient(90deg, rgba(255, 123, 95, 1), rgba(255, 51, 75, 1));
+       height: 80px;
+       width: 193px;
+       font-size: @fontSizeArticl ;
+     }
+
+     .van-submit-bar__text {
+       padding-right: 45px;
+       text-align: left;
+     }
+
+     .van-submit-bar__button--cancel {
+       height: 80px;
+       width: 193px;
+       border-radius: 40px;
+       font-size: @fontSizeArticl ;
+       color: white;
+     }
+
+     .van-submit-bar__price {
+       color: @danger;
+       font-size: 38px;
+     }
+
+     .van-submit-bar_desc {
+       color: @textcolor;
+       font-size: 22px;
+     }
+
+     .cacelButton {
+       margin-right: 24px;
+
+       .van-button {
+         height: 80px;
+         width: 193px;
+         border-radius: 40px;
+         font-size: @fontSizeArticl ;
+       }
+     }
+   }
+
+ }
+
+ .productDetail {
+   .van-submit-bar {
+     z-index: 2050 !important;
+   }
+ }
+
+ //订单
+ .orders {
+   .van-tabs__nav {
+     .van-tab {
+       font-size: @fontSizeArticl;
+       line-height: 80px;
+     }
+   }
+
+   .van-tabs--line .van-tabs__wrap {
+     height: 80px;
+   }
+
+ }
+
+ //弹窗
+ #app {
+   .primaryDialog {
+     width: 526px;
+
+     .van-dialog__header {
+       padding: 30px 0;
+       font-size: 32px;
+     }
+
+     .van-dialog__content {
+       padding: 0 30px;
+     }
+
+     .van-dialog__footer--buttons {
+       height: 80px;
+     }
+
+     .van-button--large {
+       height: 80px;
+
+     }
+
+     .van-button__text {
+       font-size: 28px;
+     }
+   }
+ }
+
+ //商品模块 sku
+
+ .chooseSku {
+   .van-popup__close-icon--top-right {
+     font-size: 35px;
+   }
+
+   .van-sku-body {
+     .van-sku__stepper-quota {
+       font-size: 20px;
+       padding: 10px 5px;
+     }
+
+     .van-sku__stepper-title {
+       font-size: 26px;
+       padding: 10px 5px;
+     }
+
+     .van-stepper.van-sku__stepper {
+
+       .van-stepper__minus,
+       .van-stepper__plus,
+       .van-stepper__input {
+         width: 50px;
+         height: 50px;
+         font-size: 24px;
+         line-height: 50px;
+       }
+     }
+   }
+
+ }
+
+ #app {
+   //list
+
+   .van-list__finished-text,
+   .van-loading__text {
+     font-size: @fontSizeNormal;
+   }
+
+   //计步器
+   .van-stepper__minus,
+   .van-stepper__plus,
+   .van-stepper__input {
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     font-size: 24px;
+   }
+
+   //轮播指示
+   .van-swipe__indicators {
+     bottom: 70px;
+
+     .van-swipe__indicator {
+       height: 12px;
+       width: 12px;
+     }
+   }
+
+   // 下拉刷新
+   .van-pull-refresh {
+     overflow: visible;
+   }
+ }
+
+
+
+
+
+ //  加载loading
+ body {
+   .loadingStyle {
+     background: transparent;
+   }
+ }

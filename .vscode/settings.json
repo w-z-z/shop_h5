@@ -1,0 +1,39 @@
+{
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "files.associations": {
+        "*.vue": "vue",
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            "wrap_attributes": "force" // auto|force|force-aligned|force-expand-multiline
+        }
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "minapp-vscode.disableAutoConfig": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html",
+        "javascript": "javascriptreact"
+    },
+    "emmet.syntaxProfiles": {
+        "JavaScript React": "jsx"
+    },
+    "explorer.confirmDelete": false,
+    "vsicons.presets.jsOfficial": true,
+    "workbench.iconTheme": "vscode-icons",
+    // #每次保存的时候自动格式化
+    "editor.formatOnSave": true,
+    // #每次保存的时候将代码按eslint格式进行修复
+    "eslint.autoFixOnSave": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

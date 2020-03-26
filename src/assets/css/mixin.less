@@ -1,0 +1,53 @@
+// 设置全局变量
+@minWidth: 320px;
+@headerHeight: 94px;
+@primary: #75DEC0;
+@hintColor: #4C9BDF;
+@highColor: #4C9BDF;
+@info: #666666;
+@warning: #FFA943;
+@danger: #FF5050;
+@border: rgba(45, 45, 45, 0.12);
+@textcolor: #999999;
+@fontSizeNormal: 24px;
+@fontSizeTitle: 32px;
+@fontSizeArticl: 28px;
+@fontSizehint: 26px;
+@fontColorNormal: #666666;
+@fontColorDark: #333333;
+@aLLBorderRadius: 15px;
+@borderColor: #EFEFEF;
+@placeholder: #BBBBBB;
+
+.block(@padding: 30px, @backColor: white, @borderRadius: @aLLBorderRadius, ) {
+  background-color: @backColor;
+  border-radius: @borderRadius ;
+  padding: @padding;
+}
+
+.flex(@justifyContent: space-between, @alignItems: center, ) {
+  display: flex;
+  align-items: @alignItems;
+  justify-content: @justifyContent;
+}
+
+.border(@point: top) {
+  border-@{point}: 1px solid @borderColor ;
+}
+
+.shadow(@color: rgba(0, 0, 0, 0.06)) {
+  box-shadow: 1px 2px 14px 0px @color;
+}
+
+
+
+
+
+//行数限制
+.ellipsis(@line: 3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  -webkit-box-orient: vertical;
+}

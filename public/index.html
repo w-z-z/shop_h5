@@ -1,0 +1,142 @@
+<!--
+ * @Descripttion: 
+ * @version: 1.0.0
+ * @Author: ranli
+ * @Date: 2020-02-19 14:47:16
+ * @LastEditors: ranli
+ * @LastEditTime: 2020-03-02 14:48:29
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- 页面描述 -->
+  <meta name="description" content="精准医疗" />
+  <!-- 页面关键词 -->
+  <meta name="keywords" content="精准医疗,口罩" />
+  <!-- 网页作者 -->
+  <meta name="author" content="精准医疗" />
+  <!-- 搜索引擎抓取 -->
+  <meta name="robots" content="index,follow" />
+
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+  <!-- Apple IOS原生浏览器 -->
+
+  <!-- 添加到主屏后设置状态栏的背景颜色； -->
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+  <!-- 添加到主屏后设置 应用标题 -->
+  <meta name="apple-mobile-web-app-title" content="精准医疗">
+  <!-- WebApp全屏模式   隐藏地址栏。 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- windows phone 点击无高光 -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <!-- iOS 图标 begin -->
+  <link rel="apple-touch-icon-precomposed" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%= BASE_URL %>favicon.ico" />
+  <!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%= BASE_URL %>favicon.ico" />
+  <!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+  <!-- iOS 图标 end -->
+
+
+  <!-- iOS 启动画面 begin -->
+  <link rel="apple-touch-startup-image" sizes="768x1004" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+  <link rel="apple-touch-startup-image" sizes="1536x2008" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPad 竖屏 1536x2008（Retina） -->
+  <link rel="apple-touch-startup-image" sizes="1024x748" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPad 横屏 1024x748（标准分辨率） -->
+  <link rel="apple-touch-startup-image" sizes="2048x1496" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPad 横屏 2048x1496（Retina） -->
+
+  <link rel="apple-touch-startup-image" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+  <link rel="apple-touch-startup-image" sizes="640x960" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+  <link rel="apple-touch-startup-image" sizes="640x1136" href="<%= BASE_URL %>favicon.ico" />
+  <!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+  <!-- iOS 启动画面 end -->
+
+
+  <!-- Windows -->
+  <meta name="msapplication-TileColor" content="#000" />
+  <!-- Windows 8 磁贴颜色 -->
+  <meta name="msapplication-TileImage" content="icon.png" />
+  <!-- Windows 8 磁贴图标 -->
+
+
+
+  <!-- 忽略数字自动识别为电话号码； -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- 忽略数字自动识别为邮箱 -->
+  <meta name="format-detection" content="email=no">
+  <!-- 启动WebApp全屏模式； -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+  <!-- 百度 -->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- QQ -->
+  <meta name="x5-page-mode" content="app">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="x5-fullscreen" content="true">
+  <!-- 360 -->
+  <!-- 设置 360 浏览器渲染模式：webkit 为极速内核，ie-comp 为 IE 兼容内核，ie-stand 为 IE 标准内核。 -->
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+  <!-- uc -->
+  <!--设置屏幕方向：portrait为横屏，landscape为竖屏； -->
+  <meta name="full-screen" content="yes">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="browsermode" content="application">
+
+
+
+  <!-- 老旧浏览器 -->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="HandheldFriendly" content="true">
+  <!-- 微软的老式浏览器 -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>四川精准医疗科技有限责任公司</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but vue-cli3-web doesn't work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+  <script src="./viewport-units-buggyfill.min.js"></script>
+  <script>
+    window.onload = function () {
+      window.viewportUnitsBuggyfill.init({
+        hacks: window.viewportUnitsBuggyfillHacks
+      });
+
+      // var winDPI = window.devicePixelRatio;
+      // var uAgent = window.navigator.userAgent;
+      // var screenHeight = window.screen.height;
+      // var screenWidth = window.screen.width;
+      // var winWidth = window.innerWidth;
+      // var winHeight = window.innerHeight;
+      // alert(
+      // "Windows DPI:" + winDPI +
+      // ";\ruAgent:" + uAgent +
+      // ";\rScreen Width:" + screenWidth +
+      // ";\rScreen Height:" + screenHeight +
+      // ";\rWindow Width:" + winWidth +
+      // ";\rWindow Height:" + winHeight
+      // )
+    }
+  </script>
+</body>
+
+</html>
